@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Peckham Poetry Group</title>
-  <meta name="description" content="Peckham Poetry Group — sessions, works, and information.">
+  <title>Peckham Poetry Group — Sessions</title>
+  <meta name="description" content="Peckham Poetry Group — session notes and documentation.">
 
   <style>
   :root {
@@ -14,8 +14,6 @@
     --link: #00f;
     --max: 800px;
   }
-
-  /* Global */
 
   * { box-sizing: border-box; }
 
@@ -33,20 +31,10 @@
     html { font-size: 16px; }
   }
 
-  body {
-    -webkit-text-size-adjust: 100%;
-    background: #fff;
-  }
+  body { -webkit-text-size-adjust: 100%; background: #fff; }
 
-  a {
-    color: var(--link);
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-
-  /* Type */
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
 
   h1, h2, h3, h4, h5, h6 {
     color: var(--heading);
@@ -54,8 +42,6 @@
     line-height: normal;
     margin: 0;
   }
-
-  /* Layout */
 
   header,
   nav,
@@ -97,17 +83,13 @@
     padding-bottom: 0.2rem;
     border-bottom: 2px solid transparent;
   }
-  nav a.active {
-    border-color: var(--heading);
-  }
+  nav a.active { border-color: var(--heading); }
 
   main {
     padding: 3rem 0 4rem;
   }
 
-  section {
-    margin-bottom: 3.5rem;
-  }
+  section { margin-bottom: 3.5rem; }
 
   h2 {
     font-size: 1.1rem;
@@ -116,9 +98,7 @@
     letter-spacing: 0.18em;
   }
 
-  p {
-    margin: 0 0 0.9rem;
-  }
+  p { margin: 0 0 0.9rem; }
 
   /* Sessions */
 
@@ -139,9 +119,7 @@
     margin-bottom: 0.7rem;
   }
 
-  figure {
-    margin: 1rem 0;
-  }
+  figure { margin: 1rem 0; }
   figure img {
     max-width: 100%;
     height: auto;
@@ -153,51 +131,18 @@
     text-align: left;
   }
 
-  /* Works */
-
-  .works-list {
-    display: flex;
-    flex-direction: column;
-    gap: 1.6rem;
-  }
-  .work-title {
-    font-size: 1.05rem;
-    margin-bottom: 0.2rem;
-  }
-  .work-credit {
-    font-size: 0.8rem;
-    color: #aaa;
-    margin-bottom: 0.45rem;
-  }
-
-  pre {
-    font-family: inherit;
-    white-space: pre-wrap;
-  }
-
-  /* Footer */
-
   footer {
     border-top: 1px solid var(--rule);
     padding: 1.6rem 0 2.4rem;
     font-size: 0.8rem;
     color: #888;
   }
-  footer p {
-    margin: 0;
-  }
+  footer p { margin: 0; }
 
   @media (max-width: 480px) {
-    header, nav, main, footer {
-      width: 88%;
-    }
-    .site-title {
-      font-size: 1.8rem;
-    }
-    nav {
-      flex-wrap: wrap;
-      row-gap: 0.4rem;
-    }
+    header, nav, main, footer { width: 88%; }
+    .site-title { font-size: 1.8rem; }
+    nav { flex-wrap: wrap; row-gap: 0.4rem; }
   }
   </style>
 </head>
@@ -208,10 +153,10 @@
   </header>
 
   <nav>
-    <a href="#sessions" class="active">Sessions</a>
-    <a href="#works">Works</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <a href="index.html" class="active">Sessions</a>
+    <a href="works.html">Works</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <main>
@@ -227,6 +172,14 @@
             Cut-up, collage and détournement session using discarded books, flyers and found text.
             Group readings and documentation in progress.
           </p>
+
+          <!-- Example image block – replace with your own -->
+          <!--
+          <figure>
+            <img src="images/ppg002-collage-01.jpg" alt="Collage from PPG 002">
+            <figcaption>Fragments from discarded library books, taped and annotated.</figcaption>
+          </figure>
+          -->
         </article>
 
         <article class="session">
@@ -239,55 +192,12 @@
 
       </div>
     </section>
-
-    <!-- WORKS -->
-    <section id="works">
-      <h2>Works</h2>
-
-      <div class="works-list">
-        <article class="work">
-          <h3 class="work-title">Urban Notation</h3>
-          <div class="work-credit">PPG member</div>
-          <pre>
-> bus brake hiss / loose poster slaps / neon 6:58
-> chip-shop salt pinned to fingertip / the mind edits
-> a city into couplets / we listen / we write
-          </pre>
-        </article>
-
-        <article class="work">
-          <h3 class="work-title">Cut-Up Flyer (Found Poem)</h3>
-          <div class="work-credit">PPG collage</div>
-          <pre>
-hand-typed tomorrow / open late // bring your own quiet
-lost cat, answers to THUNDER / reward: a soft yes
-stairs to the roof — please notice the sky
-          </pre>
-        </article>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About</h2>
-      <p>
-        Peckham Poetry Group is a reading and making circle meeting in the library pods at Peckham Library.
-        The group focuses on attentive reading, discussion, and producing new work together.
-      </p>
-      <p>
-        This site acts as a simple record of sessions and selected works.
-      </p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:peckhampoetrygroup@proton.me">peckhampoetrygroup@proton.me</a></p>
-    </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Peckham Poetry Group</p>
+    <p>© <span id="year"></span> Peckham Poetry Group · Email:
+      <a href="mailto:peckhampoetrygroup@proton.me">peckhampoetrygroup@proton.me</a>
+    </p>
   </footer>
 
   <script>
