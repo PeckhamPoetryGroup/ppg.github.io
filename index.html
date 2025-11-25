@@ -1,301 +1,296 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- 
-  PPG — Single‑file, lo‑fi, early‑internet style website
-  ------------------------------------------------------
-  How to use (GitHub Pages):
-    1) Create a repo named: yourusername.github.io
-    2) Upload this file as: index.html
-    3) In Settings → Pages → Source: Deploy from branch (main)
-    4) Visit https://yourusername.github.io
-  Editing content:
-    - Add new updates inside the <section id="updates"> list below.
-    - Add poems as <article class="poem"> blocks inside <section id="poems">.
-    - Edit About text in <section id="about">.
-    - Replace placeholder SITE_TITLE and footer links.
-  Optional:
-    - Put images in an /images folder and reference like <img src="images/yourfile.jpg">.
-    - If you want multiple pages later, duplicate this file and link to it.
-  -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Peckham Poetry Group — P P G </title>
-  <meta name="description" content="////// P P G /////////">
-<style>
-:root {
-  --ink: #555;
-  --heading: #353535;
-  --rule: #e5e5e5;
-  --link: #00f;
-  --max: 800px;
-}
+  <title>Peckham Poetry Group</title>
+  <meta name="description" content="Peckham Poetry Group — sessions, works, and information.">
 
-/* Global */
-
-* { box-sizing: border-box; }
-
-html, body {
-  margin: 0;
-  padding: 0;
-  color: var(--ink);
-  font-family: "Libre Baskerville", "Times New Roman", Times, serif;
-  font-size: 14px;
-  line-height: 1.5;
-  overflow-y: scroll;
-}
-
-@media (min-width: 600px) {
-  html { font-size: 16px; }
-}
-
-body {
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  color: var(--link);
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-/* Type */
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--heading);
-  font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
-  line-height: normal;
-  margin: 0;
-}
-
-/* Layout */
-
-header,
-nav,
-main,
-footer {
-  max-width: var(--max);
-  width: 80%;
-  margin: 0 auto;
-}
-
-header {
-  padding: 3rem 0 1.25rem;   /* was 2.5rem 0 0.75rem */
-}
-
-.site-title {
-  font-size: 2.2rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.tagline {
-  margin-top: 0.35rem;
-  font-size: 0.9rem;
-}
-
-nav {
-  border-bottom: 1px solid var(--rule);
-  padding: 0.75rem 0 0.9rem;
-  display: flex;
-  gap: 1.2rem;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.16em;
-  font-family: "Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif;
-}
-
-nav a {
-  color: var(--ink);
-  padding-bottom: 0.2rem;
-  border-bottom: 2px solid transparent;
-}
-nav a.active {
-  border-color: var(--heading);
-}
-
-main {
-  padding: 3rem 0 4rem;      /* was 2.5rem 0 3rem */
-}
-
-section {
-  margin-bottom: 3.5rem;     /* was 3rem */
-}
-
-h2 {
-  font-size: 1.1rem;
-  margin-bottom: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-}
-
-p {
-  margin: 0 0 0.9rem;
-}
-
-/* Sessions */
-
-.session-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2.2rem;
-}
-
-.session-title {
-  font-size: 1.3rem;
-  margin-bottom: 0.2rem;
-}
-
-.session-meta {
-  font-size: 0.8rem;
-  color: #aaa;
-  margin-bottom: 0.7rem;
-}
-
-figure {
-  margin: 1rem 0;
-}
-figure img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-figure figcaption {
-  font-size: 0.8rem;
-  color: #aaa;
-  text-align: left;
-}
-
-/* Works */
-
-.works-list {
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-.work-title {
-  font-size: 1.05rem;
-  margin-bottom: 0.2rem;
-}
-.work-credit {
-  font-size: 0.8rem;
-  color: #aaa;
-  margin-bottom: 0.45rem;
-}
-
-/* Footer */
-
-footer {
-  border-top: 1px solid var(--rule);
-  padding: 1.6rem 0 2.4rem;
-  font-size: 0.8rem;
-  color: #888;
-}
-footer p {
-  margin: 0;
-}
-
-@media (max-width: 480px) {
-  header, nav, main, footer {
-    width: 88%;
+  <style>
+  :root {
+    --ink: #555;
+    --heading: #353535;
+    --rule: #e5e5e5;
+    --link: #00f;
+    --max: 800px;
   }
+
+  /* Global */
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    color: var(--ink);
+    font-family: "Libre Baskerville", "Times New Roman", Times, serif;
+    font-size: 14px;
+    line-height: 1.5;
+    overflow-y: scroll;
+  }
+
+  @media (min-width: 600px) {
+    html { font-size: 16px; }
+  }
+
+  body {
+    -webkit-text-size-adjust: 100%;
+    background: #fff;
+  }
+
+  a {
+    color: var(--link);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Type */
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--heading);
+    font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: normal;
+    margin: 0;
+  }
+
+  /* Layout */
+
+  header,
+  nav,
+  main,
+  footer {
+    max-width: var(--max);
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  header {
+    padding: 3rem 0 1.25rem;
+  }
+
   .site-title {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
   }
+
+  .tagline {
+    margin-top: 0.35rem;
+    font-size: 0.9rem;
+  }
+
   nav {
-    flex-wrap: wrap;
-    row-gap: 0.4rem;
+    border-bottom: 1px solid var(--rule);
+    padding: 0.75rem 0 0.9rem;
+    display: flex;
+    gap: 1.2rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-family: "Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif;
   }
-}
-</style>
+
+  nav a {
+    color: var(--ink);
+    padding-bottom: 0.2rem;
+    border-bottom: 2px solid transparent;
+  }
+  nav a.active {
+    border-color: var(--heading);
+  }
+
+  main {
+    padding: 3rem 0 4rem;
+  }
+
+  section {
+    margin-bottom: 3.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+  }
+
+  p {
+    margin: 0 0 0.9rem;
+  }
+
+  /* Sessions */
+
+  .session-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+  }
+
+  .session-title {
+    font-size: 1.3rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .session-meta {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-bottom: 0.7rem;
+  }
+
+  figure {
+    margin: 1rem 0;
+  }
+  figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  figure figcaption {
+    font-size: 0.8rem;
+    color: #aaa;
+    text-align: left;
+  }
+
+  /* Works */
+
+  .works-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+  .work-title {
+    font-size: 1.05rem;
+    margin-bottom: 0.2rem;
+  }
+  .work-credit {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-bottom: 0.45rem;
+  }
+
+  pre {
+    font-family: inherit;
+    white-space: pre-wrap;
+  }
+
+  /* Footer */
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding: 1.6rem 0 2.4rem;
+    font-size: 0.8rem;
+    color: #888;
+  }
+  footer p {
+    margin: 0;
+  }
+
+  @media (max-width: 480px) {
+    header, nav, main, footer {
+      width: 88%;
+    }
+    .site-title {
+      font-size: 1.8rem;
+    }
+    nav {
+      flex-wrap: wrap;
+      row-gap: 0.4rem;
+    }
+  }
+  </style>
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <h1>PECKHAM POETRY GROUP <span class="blink">_</span></h1>
-    <div class="tagline">//////////P P G ////////////</div>
-    </header>
+  <header>
+    <h1 class="site-title">PECKHAM POETRY GROUP</h1>
+    <div class="tagline">P P G ////////////</div>
+  </header>
 
-    <nav>
-      <a href="#updates">Updates</a>
-      <a href="#poems">Poems</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <nav>
+    <a href="#sessions" class="active">Sessions</a>
+    <a href="#works">Works</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <main>
-      <section id="updates">
-        <h2>Updates</h2>
-        <ul class="updates">
-          <!-- COPY THIS LI FOR NEW ENTRIES. Newest on top. -->
-          <li>
-            <div class="date">29 Oct 2025</div>
-            <div>PPG site goes live. Added starter poems and the about text. Planning collage + musique concrète session ideas.</div>
-          </li>
-          <li>
-            <div class="date">17 Oct 2025</div>
-            <div>First PPG session — Imagism. Notes incoming; zine plans brewing.</div>
-          </li>
-        </ul>
-      </section>
+  <main>
+    <!-- SESSIONS (homepage) -->
+    <section id="sessions">
+      <h2>Sessions</h2>
+      <div class="session-list">
 
-      <div class="hr"></div>
+        <article class="session">
+          <h3 class="session-title">PPG 002 — Detournement &amp; Collage</h3>
+          <div class="session-meta">21 Nov 2025 · Peckham Library Pod</div>
+          <p>
+            Cut-up, collage and détournement session using discarded books, flyers and found text.
+            Group readings and documentation in progress.
+          </p>
+        </article>
 
-      <section id="poems">
-        <h2>Poems</h2>
-        <article class="poem">
-          <h3>Urban Notation</h3>
-          <div class="byline">by <span>PPG Member</span></div>
+        <article class="session">
+          <h3 class="session-title">PPG 001 — Imagism</h3>
+          <div class="session-meta">17 Oct 2025 · Peckham Library Pod</div>
+          <p>
+            Opening session focusing on Imagism: H.D., Pound, haiku lineages, and short group writes.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- WORKS -->
+    <section id="works">
+      <h2>Works</h2>
+
+      <div class="works-list">
+        <article class="work">
+          <h3 class="work-title">Urban Notation</h3>
+          <div class="work-credit">PPG member</div>
           <pre>
 > bus brake hiss / loose poster slaps / neon 6:58
-> chip‑shop salt pinned to fingertip / the mind edits
+> chip-shop salt pinned to fingertip / the mind edits
 > a city into couplets / we listen / we write
           </pre>
         </article>
 
-        <article class="poem">
-          <h3>Cut‑Up Flyer (Found Poem)</h3>
-          <div class="byline">by <span>PPG Collage</span></div>
+        <article class="work">
+          <h3 class="work-title">Cut-Up Flyer (Found Poem)</h3>
+          <div class="work-credit">PPG collage</div>
           <pre>
-hand‑typed tomorrow / open late // bring your own quiet
+hand-typed tomorrow / open late // bring your own quiet
 lost cat, answers to THUNDER / reward: a soft yes
 stairs to the roof — please notice the sky
           </pre>
         </article>
-      </section>
+      </div>
+    </section>
 
-      <div class="hr"></div>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Peckham Poetry Group is a reading and making circle meeting in the library pods at Peckham Library.
+        The group focuses on attentive reading, discussion, and producing new work together.
+      </p>
+      <p>
+        This site acts as a simple record of sessions and selected works.
+      </p>
+    </section>
 
-      <section id="about">
-        <h2>About</h2>
-        <p>
-          Peckham Poetry Group is a reading & making circle meeting in the library pods. This website
-          is intentionally simple — a public scrapbook of works‑in‑progress, session notes, zine fragments,
-          and experiments. Breaking, changing, and hand‑edited by humans.
-        </p>
-        <p>
-          Ethos: low‑pressure, high‑attention; early‑internet spirit; collective practice over perfection.
-        </p>
-      </section>
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:peckhampoetrygroup@proton.me">peckhampoetrygroup@proton.me</a></p>
+    </section>
+  </main>
 
-      <div class="hr"></div>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:peckhampoetrygroup@proton.me">peckhampoetrygroup@proton.me</a></p>
-        <p>Instagram: <a href="#">@peckhampoetrygroup</a></p>
-      </section>
-    </main>
-
-    <footer>
-      <div>© <span id="year"></span> Peckham Poetry Group · Made with raw HTML & care · <a href="#" title="view source (it’s just this file)">view source</a></div>
-    </footer>
-  </div>
+  <footer>
+    <p>© <span id="year"></span> Peckham Poetry Group</p>
+  </footer>
 
   <script>
-    // tiny helper: current year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
