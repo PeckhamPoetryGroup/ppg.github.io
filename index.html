@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- 
+  PPG — Single‑file, lo‑fi, early‑internet style website
+  ------------------------------------------------------
+  How to use (GitHub Pages):
+    1) Create a repo named: yourusername.github.io
+    2) Upload this file as: index.html
+    3) In Settings → Pages → Source: Deploy from branch (main)
+    4) Visit https://yourusername.github.io
+  Editing content:
+    - Add new updates inside the <section id="updates"> list below.
+    - Add poems as <article class="poem"> blocks inside <section id="poems">.
+    - Edit About text in <section id="about">.
+    - Replace placeholder SITE_TITLE and footer links.
+  Optional:
+    - Put images in an /images folder and reference like <img src="images/yourfile.jpg">.
+    - If you want multiple pages later, duplicate this file and link to it.
+  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peckham Poetry Group — tiny janky website</title>
+  <meta name="description" content="Peckham Poetry Group — poems, updates, events. A tiny, janky‑on‑purpose early‑internet site.">
+  <style>
+    /* --- Janky‑on‑purpose early web aesthetic --- */
+    :root {
+      --ink: #111;
+      --paper: #f2f2f2;
+      --accent: #0b24fb; /* hyperlink blue */
+      --border: #222;
+      --highlight: #fffa9c;
+    }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 16px;
+      line-height: 1.5;
+      color: var(--ink);
+      background:
+        repeating-linear-gradient(90deg, #f8f8f8 0 2px, #f3f3f3 2px 4px),
+        repeating-linear-gradient(0deg, #ffffff 0 24px, #f9f9f9 24px 48px);
+      image-rendering: pixelated;
+    }
+    .wrap {
+      max-width: 880px; 
+      margin: 24px auto; 
+      background: var(--paper);
+      border: 3px double var(--border);
+      box-shadow: 6px 6px 0 #0002;
+    }
+    header {
+      padding: 12px 14px;
+      background: #fff;
+      border-bottom: 3px double var(--border);
+    }
+    header h1 {
+      margin: 0 0 4px 0;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    header .tagline { font-size: 13px; }
+    nav {
+      padding: 6px 14px;
+      border-bottom: 1px dashed var(--border);
+      background: #fff;
+    }
+    nav a {
+      color: var(--accent);
+      text-decoration: underline;
+      margin-right: 16px;
+      font-weight: 700;
+    }
+
+    main { padding: 14px; }
+    section { margin: 22px 0 28px; }
+    .hr {
+      border-top: 3px double var(--border);
+      margin: 18px 0;
+    }
+    h2 {
+      margin: 0 0 10px 0;
+      padding: 2px 6px;
+      display: inline-block;
+      background: var(--highlight);
+      border: 1px solid var(--border);
+    }
+    h3 { margin: 8px 0 6px; }
+
+    a { color: var(--accent); }
+    .blink { animation: blink 1.1s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    /* ASCII box for content blocks */
+    .box {
+      background: #fff;
+      border: 1px solid var(--border);
+      padding: 10px;
+      margin: 10px 0;
+    }
+    .ascii {
+      font-family: "Courier New", Courier, monospace;
+      white-space: pre-wrap;
+    }
+
+    /* Updates list */
+    .updates { list-style: none; padding: 0; margin: 0; }
+    .updates li { border-bottom: 1px dashed #000; padding: 10px 0; }
+    .date { font-weight: 700; }
+
+    /* Poems */
+    .poem { margin: 16px 0; padding: 12px; border: 1px dashed var(--border); background: #fff; }
+    .poem h3 { margin-top: 0; }
+    .poem .byline { font-style: italic; font-size: 14px; }
+    .poem pre { white-space: pre-wrap; font-family: inherit; }
+
+    /* Footer */
+    footer {
+      padding: 12px 14px; 
+      border-top: 3px double var(--border);
+      background: #fff;
+      font-size: 14px;
+    }
+
+    /* Small screen tweaks */
+    @media (max-width: 520px) {
+      body { font-size: 15px; }
+      .wrap { margin: 10px; }
+      nav a { display: inline-block; margin: 6px 10px 0 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>PECKHAM POETRY GROUP <span class="blink">_</span></h1>
+      <div class="tagline">A tiny, janky‑on‑purpose digital noticeboard for poems, notes, and happenings.</div>
+    </header>
+
+    <nav>
+      <a href="#updates">Updates</a>
+      <a href="#poems">Poems</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+      <section id="updates">
+        <h2>Updates</h2>
+        <div class="box ascii">+----------------------------------------------+
+| New notes go at the top. Keep it simple.  |
+| Date first, then what changed.            |
++----------------------------------------------+</div>
+        <ul class="updates">
+          <!-- COPY THIS LI FOR NEW ENTRIES. Newest on top. -->
+          <li>
+            <div class="date">29 Oct 2025</div>
+            <div>PPG site goes live. Added starter poems and the about text. Planning collage + musique concrète session ideas.</div>
+          </li>
+          <li>
+            <div class="date">17 Oct 2025</div>
+            <div>First PPG session — Imagism. Notes incoming; zine plans brewing.</div>
+          </li>
+        </ul>
+      </section>
+
+      <div class="hr"></div>
+
+      <section id="poems">
+        <h2>Poems</h2>
+        <article class="poem">
+          <h3>Urban Notation</h3>
+          <div class="byline">by <span>PPG Member</span></div>
+          <pre>
+> bus brake hiss / loose poster slaps / neon 6:58
+> chip‑shop salt pinned to fingertip / the mind edits
+> a city into couplets / we listen / we write
+          </pre>
+        </article>
+
+        <article class="poem">
+          <h3>Cut‑Up Flyer (Found Poem)</h3>
+          <div class="byline">by <span>PPG Collage</span></div>
+          <pre>
+hand‑typed tomorrow / open late // bring your own quiet
+lost cat, answers to THUNDER / reward: a soft yes
+stairs to the roof — please notice the sky
+          </pre>
+        </article>
+      </section>
+
+      <div class="hr"></div>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          Peckham Poetry Group is a reading & making circle meeting in the library pods. This website
+          is intentionally simple — a public scrapbook of works‑in‑progress, session notes, zine fragments,
+          and experiments. Breaking, changing, and hand‑edited by humans.
+        </p>
+        <p>
+          Ethos: low‑pressure, high‑attention; early‑internet spirit; collective practice over perfection.
+        </p>
+      </section>
+
+      <div class="hr"></div>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:peckhampoetrygroup@proton.me">peckhampoetrygroup@proton.me</a></p>
+        <p>Instagram: <a href="#">@peckhampoetrygroup</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Peckham Poetry Group · Made with raw HTML & care · <a href="#" title="view source (it’s just this file)">view source</a></div>
+    </footer>
+  </div>
+
+  <script>
+    // tiny helper: current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
